@@ -27,30 +27,4 @@ elif c % 3 == 0 or d % 3 == 0:
 else:
     print(False)
 
-# Вариант 2
-# Задание 1
-x = int(input("Введите число: "))
-if x > 100:
-    print("*")
-elif x > 0:
-    print("*" * x)
 
-# Задание 2
-y = input("Введите текст: ")
-z = input("Введите текст: ")
-print(y == z)
-
-# Задание 3
-t = int(input("Введите число: "))
-g = int(input("Введите число: "))
-b = int(input("Введите число: "))
-if t == 0 and g == 0 and b == 0:
-    print("Все нули")
-elif t == 255 and g == 255 and b == 255:
-    print("Все максимум")
-elif g == 255 and t == 0 and b == 0:
-    print("Второй максимум")
-elif b == 255 and t == 0 and g == 0:
-    print("Третий максимум")
-else:
-    print("Другое")
