@@ -1,0 +1,30 @@
+# Вариант 1
+
+# Задание 1
+a = int(input("Введите число: "))
+if a < 0:
+    print(-a)
+elif a == 0:
+    print(1)
+else:
+    print(a)
+
+# Задание 2  
+b = input("Введите текст: ")
+if '.' in b or ',' in b:
+    print(True)
+else:
+    print(False)
+
+# Задание 3
+c = int(input("Введите число: "))
+d = int(input("Введите число: "))
+
+if c % 3 == 0 and d % 3 == 0:
+    print(True)
+elif c % 3 == 0 or d % 3 == 0:
+    print("Одно подходит")
+else:
+    print(False)
+    
+# Вариант 2
