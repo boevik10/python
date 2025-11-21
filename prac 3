@@ -41,3 +41,13 @@ elif j == "п":
 elif j == "к":
     r = float(input("Введите число: "))
     print(3.14 * r * r)
+
+n = int(input("Введите число: "))
+
+# Задача 5
+if n % 10 == 1 and n % 100 != 11:
+    print(n, "число")
+elif n % 10 in [2,3,4] and n % 100 not in [12,13,14]:
+    print(n, "числа")
+else:
+    print(n, "чисел")
