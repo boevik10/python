@@ -1,0 +1,43 @@
+# Задача 1
+a = int(input("Введите число: "))
+print(a // 60)
+print(a % 60)
+
+# Задача 2  
+b = int(input("Введите число: "))
+c = int(input("Введите число: "))
+d = int(input("Введите число: "))
+
+if d < b:
+    print("Мало")
+elif d > c:
+    print("Много")
+else:
+    print("Норма")
+
+# Задача 3
+e = float(input("Введите число: "))
+f = float(input("Введите число: "))
+g = float(input("Введите число: "))
+
+h = (e + f + g) / 2
+i = (h * (h - e) * (h - f) * (h - g)) ** 0.5
+print(i)
+
+# Задача 4
+j = input("Введите букву: ")
+
+if j == "т":
+    k = float(input("Введите число: "))
+    l = float(input("Введите число: "))
+    m = float(input("Введите число: "))
+    n = (k + l + m) / 2
+    o = (n * (n - k) * (n - l) * (n - m)) ** 0.5
+    print(o)
+elif j == "п":
+    p = float(input("Введите число: "))
+    q = float(input("Введите число: "))
+    print(p * q)
+elif j == "к":
+    r = float(input("Введите число: "))
+    print(3.14 * r * r)
