@@ -8,3 +8,21 @@ elif a == 0:
     print(1)
 else:
     print(a)
+
+#Задание 2
+s = input("Введите строку: ")
+if "." in s or "," in s:
+    print(True)
+else:
+    print(False)
+#Задание 3
+a = int(input("Введите первое число: "))
+b = int(input("Введите второе число: "))
+a3 = (a % 3 == 0)
+b3 = (b % 3 == 0)
+if a3 and b3:
+    print(True)
+elif a3 != b3:
+    print("Одно число делится на 3")
+else:
+    print(False)
