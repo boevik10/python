@@ -26,3 +26,92 @@ elif a3 != b3:
     print("Одно число делится на 3")
 else:
     print(False)
+
+#Вариант 2
+
+#Задание 1
+n = int(input())
+if n > 100:
+    print("*")
+elif n >= 0:
+    print("*" * n)
+#Задание 2
+a = input()
+b = input()
+if a == b:
+    print(True)
+else:
+    print(False)
+#Задание 3
+r = int(input())
+g = int(input())
+b = int(input())
+if r == 0 and g == 0 and b == 0:
+    print("Чёрный цвет")
+elif r == 255 and g == 255 and b == 255:
+    print("Белый цвет")
+elif r == 255 and g == 0 and b == 0:
+    print("Красный цвет")
+elif r == 0 and g == 255 and b == 0:
+    print("Зелёный цвет")
+elif r == 0 and g == 0 and b == 255:
+    print("Синий цвет")
+else:
+    print("Нет цвета")
+
+#Вариант 3
+
+#Задание 1
+n = int(input())
+if n > 0:
+    print(n - 1, n, n + 1)
+else:
+    n = 1
+    print(n - 1, n, n + 1)
+#Задание 2
+name = input()
+if name.endswith(".doc"):
+    print("Word file")
+elif name.endswith(".py"):
+    print("Python file")
+elif name.endswith(".txt"):
+    print("Text file")
+else:
+    print("Неизвестное расширение")
+#Задание 3
+a = int(input())
+b = int(input())
+c = int(input())
+if a == b == c:
+    print("Равносторонний")
+elif a == b or a == c or b == c:
+    print("Равнобедренный")
+else:
+    print("Разносторонний")
+
+
+#Вариант 4
+
+#Задание 1
+
+text = 'important information in one line'
+a = input()
+if a in text:
+    print(True)
+else:
+    print(False)
+#Задание 2
+a = int(input())
+b = int(input())
+if a == b:
+    print("Квадрат")
+    print(a * b)
+else:
+    print("Прямоугольник")
+    print(a * b)
+#Задание 3
+
+
+
+
+
