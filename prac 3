@@ -60,7 +60,6 @@ else:
 
 print(n, word)
 #Задание 6
-#6
 ticket_number_str = input()
 sum_first_three = int(ticket_number_str[0]) + int(ticket_number_str[1]) + int(ticket_number_str[2])
 sum_last_three = int(ticket_number_str[3]) + int(ticket_number_str[4]) + int(ticket_number_str[5])
