@@ -111,6 +111,19 @@ else:
     print(a * b)
 #Задание 3
 
+#Вариант 5
+
+#Задание 1
+num = int(input())
+num2 = int(input())
+if num > num2:
+    print(num**num2)
+elif num2 > num:
+    print(num2**num)
+else:
+    print(num + num2)
+
+
 
 
 
