@@ -123,6 +123,28 @@ elif num2 > num:
 else:
     print(num + num2)
 
+#Задание 2
+new_message = "Hello! How are you?"
+answer = input()
+if len(answer) > 0 and answer[0] == new_message[0]:
+    print(True)
+else:
+    print(False)
+
+#Задание 3
+cm = int(input())
+cm2 = int(input())
+if cm > cm2:
+    print("Первый отрезок длиннее на:"cm - cm2)
+elif cm2 > cm:
+    print("Второй отрезок длиннее на", num2 - num)
+else:
+    print("Отрезки равны")
+
+
+
+
+
 
 
 
