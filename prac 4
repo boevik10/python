@@ -141,6 +141,99 @@ elif cm2 > cm:
 else:
     print("Отрезки равны")
 
+#Вариант 6
+#Задание 1
+s = input("Введите строку: ")
+if len(s) > 0 and s[0] == s[-1]:
+    print(True)
+else:
+    print(False)
+#Задание 2
+n = int(input("Введите число: "))
+if n % 2 == 0:
+    print(n ** 2)
+elif n % 3 == 0:
+    print(n ** 3)
+else:
+    print(n * 100)
+#Задание 3
+a = float(input("Введите первое число: "))
+b = float(input("Введите второе число: "))
+if a < 0 and b < 0:
+    print(False)
+elif a > 0 and b > 0:
+    print(True)
+else:
+    if a < 0:
+        a += 1000
+    if b < 0:
+        b += 1000
+    print("Первое число:", a)
+    print("Второе число:", b)
+
+
+#Вариант 7
+#Задание 1
+s = input()
+if len(s) > 0 and s[-1] in ('я', 'и', 'е', 'ю'):
+    print(True)
+else:
+    print(False)
+#Задание 2
+a, b, c = map(float, input().split())
+
+if a > 0 and b > 0 and c > 0 and a + b > c and a + c > b and b + c > a:
+    print(True)
+else:
+    print(False)
+#Задание 3
+n = int(input())
+last = abs(n) % 10
+
+if last == 0:
+    print(n ** 10)
+elif last == 1:
+    print(n % 3)
+elif last == 2:
+    print(n // 2)
+elif last >= 3:
+    print(n ** 2)
+
+#Вариант 8
+#Задание 1
+
+password = input()
+if len(password) < 8 or password == "qwerty123":
+    print(False)
+else:
+    print(True)
+#Задание 2
+
+pc_number = 777
+x, y = map(int, input().split())
+if (x < pc_number < y) or (y < pc_number < x):
+    print(True)
+else:
+    print(False)
+#Задание 3
+
+lamp_1 = 0
+lamp_2 = 0
+ans = input("Какую лампочку зажечь? ")
+if ans == "1":
+    lamp_1 = 1
+elif ans == "2":
+    lamp_2 = 1
+else:
+    print("Обе лампочки не горят!")
+print("lamp_1 =", lamp_1)
+print("lamp_2 =", lamp_2)
+
+
+
+
+
+
 
 
 
