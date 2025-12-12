@@ -228,18 +228,121 @@ else:
     print("Обе лампочки не горят!")
 print("lamp_1 =", lamp_1)
 print("lamp_2 =", lamp_2)
+# вариант 9
+# задание 1 
+sw1 = False
+sw2 = False
+ans = input("Включить? ")
+if ans.lower() == "да":
+    sw1 = True
+    sw2 = True
+    print("Всё включено", sw1, sw2)
+else:
+    print(sw1, sw2)
+
+# задание 2 
+num9 = int(input("Введите число: "))
+if num9 > 0 and num9 % 2 == 0:
+    print(True, "even")
+elif num9 > 0 and num9 % 2 != 0:
+    print(True, "odd")
+else:
+    print(False)
+
+# задание 3
+txt9 = input("Введите строку: ")
+if txt9.startswith("/"):
+    print("command")
+else:
+    print("It's string")
 
 
+# вариант 10
+# задание 1
+stroka10 = input("Введите строку: ")
+dl = len(stroka10)
+if dl == 0:
+    print(None)
+elif dl <= 5:
+    print("short")
+elif dl <= 10:
+    print("normal")
+else:
+    print("long")
+
+# задание 2 
+chislo10 = int(input("Введите целое число: "))
+if chislo10 < 0:
+    chislo10 = 1_000_000
+    print(chislo10)
+elif chislo10 == 0:
+    print(2 ** 2)
+else:
+    print(chislo10 ** 3)
+
+# задание 3 
+num1 = 10
+num2 = 100
+user_num = int(input("Введите число: "))
+print(num1 < user_num < num2)
+# Вариант 11
+
+# задание 1
+prog_num = 0
+a = int(input("Введите первое число: "))
+b = int(input("Введите второе число: "))
+if a < 0 and b < 0:
+    prog_num = a + b
+    print(prog_num)
+elif a > 0 and b > 0:
+    prog_num = a - b
+    print(prog_num)
+else:
+    print(False)
+
+# задание 2
+c = int(input("Введите число: "))
+if c % 2 != 0:
+    print(c + 1)
+else:
+    print(True)
+
+# задание 3
+s = input("Введите строку: ")
+if len(s) > 10:
+    print(s[:5])
+else:
+    print(s)
 
 
+# Вариант 12 
 
+# задание 1
+ru = 'абвгдеёжзийклмнопрстуфхцчшщьыъэюя'
+en = 'abcdefghijklmnopqrstuvwxyz'
+l = input("Введите букву: ")
+if l in ru:
+    print("rus")
+elif l in en:
+    print("eng")
+else:
+    print(None)
 
+# задание 2
+pc_num = 10
+x = int(input("Введите число: "))
+if x == pc_num or x == pc_num - 1 or x == pc_num + 1:
+    print(True)
+else:
+    print(False)
 
-
-
-
-
-
-
-
-
+# задание 3
+right_ans = (221 - 13) * 2
+print(right_ans)
+u = int(input("Ваш ответ: "))
+if u == right_ans:
+    print(True)
+elif u > right_ans:
+    print(">")
+else:
+    print("<")
