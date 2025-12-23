@@ -1,0 +1,61 @@
+# Задание 1
+
+matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+print("matrix:")
+for line in matrix:
+    print(line)
+nums = []
+count = 0
+for line in matrix:
+    for n in line:
+        if n % 2 != 0:
+            nums.append(n)
+        else:
+            count += 1
+print("нечётные числа matrix")
+print(*nums)
+print("кол-во чётных:", count)
+# Задание 2
+
+m1 = [[2, 4, 3, 6], [5, 7, 1, 5]]
+m2 = [[2, 9, 0, 2], [3, 4, 7, 6]]
+result = []
+for i in range(len(m1)):
+    line = []
+    for j in range(len(m1[i])):
+        line.append(m1[i][j] * m2[i][j])
+    result.append(line)
+print(result)
+for line in result:
+    print(line, "сумма строки:", sum(line))
+# Задание 3
+
+fruits = [['Banana', 'apple'], ['apricot', 'Avocado'],
+          ['lime', 'lemon'], ['Mango', 'grapes']]
+for line in fruits:
+    for word in line:
+        if word[0].isupper():
+            print(word)
+# Задание 4
+
+data = [['toy', 'bee', 'cheese', 'ear'],
+        [False, 'word', '0110110', 10],
+        ['happiness', '(J °□°)J', 'luck', None],
+        ['car', '<- code ->', 4.7, True]]
+for i, line in enumerate(data):
+    print(line[1])
+# Задание 5
+
+rows = int(input("Введите количество строк:\n"))
+cols = int(input("Введите количество столбцов:\n"))
+matrix = []
+for i in range(rows):
+    line = []
+    for j in range(cols):
+        x = int(input(f"Введите значение элемента [{i}][{j}]:\n"))
+        line.append(x)
+    matrix.append(line)
+print("Ваш двумерный массив:")
+for line in matrix:
+    print(line)
+
